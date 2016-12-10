@@ -1,0 +1,30 @@
+@media (max-width: 770px) {
+	h1{
+		font-size: 3rem;
+	}
+	.logo_home {
+    	width: 100%;
+	}
+	.centrado {
+	    width: 60%;
+	}
+	.contenedor{
+    	margin: auto;
+	    text-align: center;
+	}
+	.contenedor img{
+		width: 100% 
+	}
+	.contenedor button {
+		width: 100%;
+
+	}
+
+}
+@media (max-width: 320px) {
+	h1{
+		font-size: 3rem;
+	}
+
+
+}
