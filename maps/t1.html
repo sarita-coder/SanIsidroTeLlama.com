@@ -13,6 +13,116 @@
     <div id="map"></div>
     <script type="text/javascript">
 
+   var locales = [{
+        lat: -12.098283,
+        lng: -77.056210,
+        title: 'Toulouse Lautrec',
+        infoWindow: {
+          content: '<p>Toulouse Lautrec</p>'
+        }},{
+        lat: -12.103633,
+        lng: -77.058184,
+        title: 'Grifo Primax',
+        infoWindow: {
+          content: '<p>Grifo Primax</p>'
+        }},{
+        lat: -12.102668,
+        lng: -77.052176,
+        title: 'Vivanda',
+        infoWindow: {
+          content: '<p>Vivanda</p>'
+        }},{
+        lat: -12.098454,
+        lng: -77.012364,
+        title: 'Aromas Peruanos',
+        infoWindow: {
+          content: '<p>Aromas Peruanos</p>'
+        }},{
+        lat: -12.097575,
+        lng: -77.038519,
+        title: 'La Locanda (Swissotel)',
+        infoWindow: {
+          content: '<p>La Locanda (Swissotel)</p>'
+        }},{
+        lat: -12.094294,
+        lng: -77.034838,
+        title: 'Malabar',
+        infoWindow: {
+          content: '<p>Malabar</p>'
+        }},{
+        lat: -12.105992,
+        lng: -77.038658,
+        title: 'Osaka (San Isidro)',
+        infoWindow: {
+          content: '<p>Osaka (San Isidro)</p>'
+        }},{
+        lat: -12.092252,
+        lng: -77.024214,
+        title: 'Barrio Tapeo Peruano',
+        infoWindow: {
+          content: '<p>Barrio Tapeo Peruano</p>'
+        }},{
+        lat: -12.092252,
+        lng: -77.024214,
+        title: 'Caplina (San Isidro)',
+        infoWindow: {
+          content: '<p>Caplina (San Isidro)</p>'
+        }},{
+        lat: -12.091322,
+        lng: -77.039659,
+        title: 'Baco & Vaca',
+        infoWindow: {
+          content: '<p>Baco & Vaca</p>'
+        }},{
+        lat: -12.094467 ,
+        lng: -77.026601,
+        title: 'La Carreta Restaurante',
+        infoWindow: {
+          content: '<p>La Carreta Restaurante</p>'
+        }},{
+        lat: -12.096294,
+        lng: -77.035183,
+        title: 'Lima 27',
+        infoWindow: {
+          content: '<p>Lima 27</p>'
+        }},{
+        lat: -12.111060,
+        lng: -77.042820,
+        title: 'San Antonio',
+        infoWindow: {
+          content: '<p>San Antonio</p>'
+        }},{
+        lat: -12.103990,
+        lng: -77.058055,
+        title: 'Chifa Amigo',
+        infoWindow: {
+          content: '<p>Chifa Amigo</p>'
+        }},{
+        lat: -12.098451,
+        lng: -77.055609,
+        title: 'Heladeria 4D',
+        infoWindow: {
+          content: '<p>Heladería 4D</p>'
+        }},{
+        lat: -12.098073,
+        lng: -77.056253,
+        title: 'Pharmax',
+        infoWindow: {
+          content: '<p>Pharmax</p>'
+        }},{
+        lat: -12.098325,
+        lng: -77.056296,
+        title: 'La Bagette',
+        infoWindow: {
+          content: '<p>La Bagette</p>'
+        }},{
+        lat: -12.102983,
+        lng: -77.053292,
+        title: 'La Bombonier',
+        infoWindow: {
+          content: '<p>La Bombonier</p>'
+        }}];      
+      
       function initMap() {
 
         var iniLatLng = {lat: -12.098640, lng: -77.056339};
