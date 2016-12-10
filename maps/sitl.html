@@ -148,11 +148,15 @@
         }
       });
 
+      var km = 0;
       for(var l in locales ) {
         loc = locales[l];
-        map.addMarker(loc);
-        if(getKilometros(milat,milng,loc.lat,loc.lng)<=7){
-
+        km = getKilometros(milat,milng,loc.lat,loc.lng);
+        
+        //console.log(km);
+        if(km<6){
+            map.addMarker(loc);
+            console.log(km);  
         };
       }
 

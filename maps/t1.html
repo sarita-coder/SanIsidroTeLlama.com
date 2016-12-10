@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GMaps.js &mdash; Geolocation</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="../gmaps.js"></script>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="sitl.css" />
+  <script type="text/javascript">
+    var map;
+    var milat=-12.043333;
+    var milng=-77.028333;
+
+    var locales = $.getJSON('data.json');
+
+    console.log(locales);
+
+    $(document).ready(function(){
+
+      var map = new GMaps({
+        el: '#map',
+        lat: milat,
+        lng: milng
+      });
+
+      GMaps.geolocate({
+        success: function(position){
+          milat = position.coords.latitude;
+          mipos = position.coords.longitude;
+          map.setCenter(position.coords.latitude, position.coords.longitude);
+        },
+        error: function(error){
+          alert('Geolocation failed: '+error.message);
+        },
+        not_supported: function(){
+          alert("Your browser does not support geolocation");
+        },
+        always: function(){}
+      });
+
+      var km = 0;
+      for(var l in locales ) {
+        loc = locales[l];
+        map.addMarker(loc);
+      }
+
+    },
+
+    getKilometros = function(lat1,lon1,lat2,lon2)
+    {
+      rad = function(x) {return x*Math.PI/180;}
+      var R = 6378.137; //Radio de la tierra en km
+      var dLat = rad( lat2 - lat1 );
+      var dLong = rad( lon2 - lon1 );
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLong/2) * Math.sin(dLong/2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      var d = R * c;
+      return d.toFixed(3); //Retorna tres decimales
+    });
+
+
+  </script>
+</head>
+<body>
+
+      <div id="map"></div>
+
+</body>
+</html>
