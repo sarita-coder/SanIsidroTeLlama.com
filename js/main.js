@@ -9,3 +9,12 @@
 // 	})
 // }
 
+
+$(document).ready(function() {
+	$('.fa-bars').on('click',function(){
+	  $('.perfil2').toggleClass('mostrar');
+	})
+	$('#setting').on('click', function(){
+		$('#lenguages').toggleClass('mostrar');
+	})
+}
