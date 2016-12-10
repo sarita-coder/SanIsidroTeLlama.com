@@ -12,7 +12,6 @@
   <body>
     <div id="map"></div>
     <script type="text/javascript">
-
    var locales = [{
         lat: -12.098283,
         lng: -77.056210,
@@ -124,16 +123,13 @@
         }}];      
       
       function initMap() {
-
         var iniLatLng = {lat: -12.098640, lng: -77.056339};
-
         var map = new google.maps.Map(document.getElementById('map'), {
           center: iniLatLng,
           zoom: 16
         });
         
         var infoWindow = new google.maps.InfoWindow({map: map});
-
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -141,7 +137,6 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found.');
             map.setCenter(pos);
@@ -153,22 +148,32 @@
           handleLocationError(false, infoWindow, map.getCenter());
         }
       }
-
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
       }
+        
 
-        var myLatLng = {lat: -12.103633, lng: -77.05818};
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Grifo Primax'
-        });
-      
-        marker.setMap(map);
+        for(var loc in locales){
+          
+          var ublocal = locales[loc];
+
+          console.log(ublocal.lat);
+          console.log(ublocal.lng);
+
+          var myLatLng = {lat: ublocal.lat, lng: ublocal.lng};
+
+          var marker = new window.google.maps.Marker({ 
+            position: myLatLng,
+            map: map,
+            title: 'Centro'
+          });
+        
+          marker.setMap(map);
+          
+        }
 
     </script>
 
