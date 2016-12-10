@@ -157,19 +157,23 @@
         
 
         for(var loc in locales){
+          
           var ublocal = locales[loc];
+
+          console.log(ublocal.lat);
+          console.log(ublocal.lng);
+
           var myLatLng = {lat: ublocal.lat, lng: ublocal.lng};
 
-          var marker = new google.maps.Marker({
+          var marker = new google.maps.Marker({ 
             position: myLatLng,
             map: map,
             title: 'Centro'
           });
         
           marker.setMap(map);
-
+          
         }
-
 
     </script>
 
