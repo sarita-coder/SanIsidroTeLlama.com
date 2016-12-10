@@ -1,0 +1,32 @@
+@font-face{
+	font-family: 'segoeui';
+	src: url('../font/segoe-ui/segoeui.ttf');
+}
+
+@font-face{
+	font-family: 'segoeui-bold';
+	src: url('../font/segoe-ui/ufonts.com_segoe-ui-bold.ttf');
+}
+*{
+	font-family: 'segoeui-bold';
+}
+.home{
+	background:#86af4a;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+}
+.centrado{
+	width: 50%;
+}
+.logo_home{
+	width: 100%;
+}
+h1{
+	color:white;
+	font-size:8rem;
+}
