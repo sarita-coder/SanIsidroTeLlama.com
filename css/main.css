@@ -23,10 +23,156 @@
 .centrado{
 	width: 50%;
 }
-.logo_home{
-	width: 100%;
+.logo_home {
+    width: 60%;
 }
 h1{
 	color:white;
-	font-size:8rem;
+	font-size:5rem;
 }
+*{
+		box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+   	font-family:'font-segoeui';
+}
+
+.btn_facebook{
+
+	border-radius: 9px;
+    font-size: 24px;
+    border: 1px solid #3b5998;
+    background: #3b5998;
+    padding: 5px 18px;
+}
+.btn_facebook i, .btn_facebook span{
+	color:white;
+}
+header{
+	background: #86af4a;
+	padding: 5px;
+	position: relative;
+}
+.logo-header{
+	height: 40px;
+}
+.logo_header span{
+	color: white;
+	font-size: 2rem;
+    /* line-height: 1.1; */
+    position: relative;
+    bottom: -1rem;
+}
+
+/** home***/
+.menu-bar{
+	box-shadow: 1px 0px 3px 3px rgba(53, 49, 49, 0.28);
+	border-radius:50px;
+	border:0.5px solid white;
+	height:40px;
+	padding:8px 4px;
+	position:absolute;
+	right:-95px;
+	top:0px;
+	width:40px;
+}
+
+.mover{
+	right:-60px;
+}
+.uno, .dos, .tres{
+	background:white;
+	height:1.1px;
+	margin:5px;
+	width:65%;
+	transition: all 0.5s;
+}
+.mostrar{
+	left:0px;
+	.uno{
+		transform: rotate(45deg) translate(4px,6px);
+	}
+	.dos{
+		opacity: 0;
+	}
+	.tres{
+		transform: rotate(-45deg) translate(2px,-5px);
+	}
+}
+.mostrar{
+	display: block!important;
+}
+#setting{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+	padding: 5px;
+	z-index: 100000;
+}
+select{
+	border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 19px;
+    width: 20rem;
+}
+header{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.contenedor{
+	padding: 5% 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor button{
+	padding: 20px 10px;
+	margin: 20px 0;
+	border-radius: 15px;
+}
+.contenedor button a{
+	    font-size: 1.8rem;
+	color:white;
+
+}
+
+.contenedor button{
+	width: 100% 
+}
+footer{
+	position: absolute;
+    bottom: 0;
+    background: #86af4a;
+    height: 60px;
+    width: 100%;
+}
+
+.contenedor button{
+	border: #86af4a;
+    background: #86af4a;
+    color: white;
+    padding: 10px 20px;
+    width: 80%;
+}
+.fa-bars{
+	color:white;
+	float: right;
+    margin-right: 5px;
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+.float-flecha{
+	z-index: 10;
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    font-size: 4rem;
+}
+.float-flecha i {
+	color:white;
+
+	}

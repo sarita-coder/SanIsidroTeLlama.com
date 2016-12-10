@@ -3,23 +3,42 @@
   <head>
     <title>San Isidro Te Llama</title>
     <link rel="icon" type="image/png" href="img/icon.png"/>
+    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
   </head>
   <body>
-    <div class=" home container">
+    <div class=" home">
+
         <div class="centrado">
           <img class="logo_home" src="img/hoja.png">
+
           <h1>San Isidro te llama</h1>
           <button class="btn_facebook" alt="logeo Facebook">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <a href="pregunta.html" >
+              <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
             <span>facebook</span>
-
+            </a>
           </button>
-          <a href="maps/sitl.html">mapa</a>
+          <p>
+            <a href="maps/sitl.html">mapa</a>
+          </p>
+          <div id="lenguages">
+            <select name="cars">
+              <option value="volvo">Español</option>
+              <option value="saab">Ingles</option>
+              <option value="fiat">Frances</option>
+              <option value="audi">Italiano</option>
+            </select>
+          </div>
+          
         </div>
+        <span id="setting">
+          <i class="fa fa-cog fa-4x" aria-hidden="true"></i>
+        </span>
 
       
     </div>
@@ -28,5 +47,6 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" scr="js/main.js"></script>
+    <script type="text/javascript" scr="js/bootstrap.js"></script>
   </body>
 </html>
