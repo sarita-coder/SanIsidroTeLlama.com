@@ -129,6 +129,25 @@
           zoom: 16
         });
         
+        for(var loc in locales){
+          
+          var ublocal = locales[loc];
+
+          console.log(ublocal.lat);
+          console.log(ublocal.lng);
+
+          var myLatLng = {lat: ublocal.lat, lng: ublocal.lng};
+
+          var marker = new google.maps.Marker({ 
+            position: myLatLng,
+            map: map,
+            title: 'Centro'
+          });
+        
+          marker.setMap(map);
+          
+        }
+        
         var infoWindow = new google.maps.InfoWindow({map: map});
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
@@ -155,25 +174,7 @@
                               'Error: Your browser doesn\'t support geolocation.');
       }
         
-
-        for(var loc in locales){
-          
-          var ublocal = locales[loc];
-
-          console.log(ublocal.lat);
-          console.log(ublocal.lng);
-
-          var myLatLng = {lat: ublocal.lat, lng: ublocal.lng};
-
-          var marker = new window.google.maps.Marker({ 
-            position: myLatLng,
-            map: map,
-            title: 'Centro'
-          });
         
-          marker.setMap(map);
-          
-        }
 
     </script>
 
