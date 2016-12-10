@@ -1,0 +1,215 @@
+[
+   {
+      "lat": -12.098283,
+      "lng": -77.05621,
+      "title": "Toulouse Lautrec",
+      "metadata":{
+         "tipo":"educativo"
+      },
+      "infoWindow": {
+         "content": "<p>Toulouse Lautrec<\/p>"
+      }
+   },
+   {
+      "lat": -12.103633,
+      "lng": -77.05818,
+      "title": "Grifo Primax",
+      "metadata":{
+         "tipo":"grifo"
+      },
+      "infoWindow": {
+         "content": "<p>Grifo Primax<\/p>"
+      }
+   },
+   {
+      "lat": -12.102668,
+      "lng": -77.05218,
+      "title": "Vivanda",
+      "metadata":{
+         "tipo":"supermercado"
+      },
+      "infoWindow": {
+         "content": "<p>Vivanda<\/p>"
+      }
+   },
+   {
+      "lat": -12.098454,
+      "lng": -77.01237,
+      "title": "Aromas Peruanos",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"criollo"
+      },
+      "infoWindow": {
+         "content": "<p>Aromas Peruanos<\/p>"
+      }
+   },
+   {
+      "lat": -12.097575,
+      "lng": -77.03852,
+      "title": "La Locanda (Swissotel)",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>La Locanda (Swissotel)<\/p>"
+      }
+   },
+   {
+      "lat": -12.094294,
+      "lng": -77.034836,
+      "title": "Malabar",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Malabar<\/p>"
+      }
+   },
+   {
+      "lat": -12.105992,
+      "lng": -77.03866,
+      "title": "Osaka (San Isidro)",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Osaka (San Isidro)<\/p>"
+      }
+   },
+   {
+      "lat": -12.092252,
+      "lng": -77.024216,
+      "title": "Barrio Tapeo Peruano",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Barrio Tapeo Peruano<\/p>"
+      }
+   },
+   {
+      "lat": -12.092252,
+      "lng": -77.024216,
+      "title": "Caplina (San Isidro)",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Caplina (San Isidro)<\/p>"
+      }
+   },
+   {
+      "lat": -12.091322,
+      "lng": -77.03966,
+      "title": "Baco & Vaca",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Baco & Vaca<\/p>"
+      }
+   },
+   {
+      "lat": -12.094467,
+      "lng": -77.0266,
+      "title": "La Carreta Restaurante",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>La Carreta Restaurante<\/p>"
+      }
+   },
+   {
+      "lat": -12.096294,
+      "lng": -77.03519,
+      "title": "Lima 27",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Lima 27<\/p>"
+      }
+   },
+   {
+      "lat": -12.11106,
+      "lng": -77.04282,
+      "title": "San Antonio",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>San Antonio<\/p>"
+      }
+   },
+   {
+      "lat": -12.10399,
+      "lng": -77.05805,
+      "title": "Chifa Amigo",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Chifa Amigo<\/p>"
+      }
+   },
+   {
+      "lat": -12.098451,
+      "lng": -77.05561,
+      "title": "Heladeria 4D",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Heladería 4D<\/p>"
+      }
+   },
+   {
+      "lat": -12.098073,
+      "lng": -77.05625,
+      "title": "Pharmax",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>Pharmax<\/p>"
+      }
+   },
+   {
+      "lat": -12.098325,
+      "lng": -77.0563,
+      "title": "La Bagette",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>La Bagette<\/p>"
+      }
+   },
+   {
+      "lat": -12.102983,
+      "lng": -77.05329,
+      "title": "La Bombonier",
+      "metadata":{
+         "tipo":"restaurante",
+         "especialidad":"carnes"
+      },
+      "infoWindow": {
+         "content": "<p>La Bombonier<\/p>"
+      }
+   }
+]
